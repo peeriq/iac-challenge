@@ -39,10 +39,7 @@ as each will impact the overall approach.
     - functions correctly. Ensure the application is working properly by
       querying the api. Examples:
 ```bash
-curl localhost:8080/vehicles | jq
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100  292k  100  292k    0     0  7100k      0 --:--:-- --:--:-- --:--:-- 10.9M
+curl -s localhost:8080/vehicles | jq
 [
   {
     "city": "Heshui",
@@ -88,10 +85,7 @@ curl localhost:8080/vehicles | jq
   .
 ```
 ```bash
-curl localhost:8080/vehicles/56 | jq
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100   291  100   291    0     0  38717      0 --:--:-- --:--:-- --:--:--  142k
+curl -s localhost:8080/vehicles/56 | jq
 {
   "city": "Philadelphia",
   "country": "United States",
